@@ -91,7 +91,7 @@ public class Person {
 				+ ", City : " + city + ", State : " + state + ", Zip : " + zip + ", PhoneNumber : " + phno
 				+ ", Email : " + emailId + " ]";
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -138,5 +138,3 @@ public class Person {
 		return true;
 	}
 }
-
-
