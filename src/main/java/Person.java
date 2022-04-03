@@ -5,11 +5,12 @@ public class Person {
 	public String address;
 	public String city;
 	public String state;
-	public Integer zip;
-	public Long phno;
+	public String zip;
+	public String phone;
 	public String emailId;
+	
 
-	public Person(String firstName, String lastName, String address, String city, String state, Integer zip, Long phno,
+	public Person(String firstName, String lastName, String address, String city, String state, String zip, String phno,
 			String emailId) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -17,7 +18,7 @@ public class Person {
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
-		this.phno = phno;
+		this.phone = phno;
 		this.emailId = emailId;
 	}
 
@@ -61,20 +62,20 @@ public class Person {
 		this.state = state;
 	}
 
-	public Integer getZip() {
+	public String getZip() {
 		return zip;
 	}
 
-	public void setZip(Integer zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 
-	public Long getPhNo() {
-		return phno;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setPhNo(Long phno) {
-		this.phno = phno;
+	public void setPhone(String phno) {
+		this.phone = phno;
 	}
 
 	public String getEmailId() {
@@ -88,7 +89,7 @@ public class Person {
 	@Override
 	public String toString() {
 		return "\nPerson [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
-				+ ", state=" + state + ", zip=" + zip + ", phno=" + phno + ", emailId=" + emailId + "]";
+				+ ", state=" + state + ", zip=" + zip + ", phone=" + phone + ", emailId=" + emailId + "]";
 	}
 
 }
