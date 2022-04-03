@@ -1,4 +1,4 @@
-public class Person {
+public class Person1 {
 
 	public String firstName;
 	public String lastName;
@@ -10,7 +10,7 @@ public class Person {
 	public String emailId;
 	
 
-	public Person(String firstName, String lastName, String address, String city, String state, String zip, String phno,
+	public Person1(String firstName, String lastName, String address, String city, String state, String zip, String phno,
 			String emailId) {
 		this.firstName = firstName;
 		this.lastName = lastName;

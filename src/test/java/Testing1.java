@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Testing {
+public class Testing1 {
 
 	@Before
 	public void welcomeMessage() {
@@ -11,7 +11,7 @@ public class Testing {
 	
 	@Test
 	public void test() throws Exception {
-		AddressBook addressBook  = new AddressBook();
+		AddressBook1 addressBook  = new AddressBook1();
 		addressBook.checkForDuplicate();
 		int length = addressBook.length();
 		Assert.assertEquals(1, length);

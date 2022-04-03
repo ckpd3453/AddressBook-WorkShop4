@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class AddressBook {
+public class AddressBook1 {
 	// Creating objects and arrayList
 	static Scanner sc = new Scanner(System.in);
-	static ArrayList<Person> list = new ArrayList<Person>();
-	static Person person;
-	static AddressBook addressBook = new AddressBook();
+	static ArrayList<Person1> list = new ArrayList<Person1>();
+	static Person1 person;
+	static AddressBook1 addressBook = new AddressBook1();
 
 	/*
 	 * Checking for duplicate value
@@ -21,7 +21,7 @@ public class AddressBook {
 			addressBook.checkForDuplicate();
 		}
 		if (list.size() > 0) {
-			for (Person personList : list) {
+			for (Person1 personList : list) {
 				person = personList;
 				if (name.equals(person.firstName)) {
 					System.out.println(
@@ -42,8 +42,8 @@ public class AddressBook {
 	 * Adding Contacts in list and validating all the inputs given by user
 	 * using @REGEX
 	 */
-	public ArrayList<Person> addContact(String name) throws Exception {
-		MultipleAddressBook mult = new MultipleAddressBook();
+	public ArrayList<Person1> addContact(String name) throws Exception {
+		MultipleAddressBook1 mult = new MultipleAddressBook1();
 		
 		String firstName = name;
 		System.out.println("Enter Last Name: ");
@@ -96,7 +96,7 @@ public class AddressBook {
 			System.out.println("Please Enter Email in abc235@bl.co.in format \n Please Refresh..");
 			System.exit(0);
 		}
-		person = new Person(firstName, lastName, address, city, state, zip, phno, emailId);
+		person = new Person1(firstName, lastName, address, city, state, zip, phno, emailId);
 		list.add(person);
 		System.out.println(list);
 		return list;
@@ -225,7 +225,7 @@ public class AddressBook {
 	 */
 	public static void main(String[] args) throws Exception  {
 
-		MultipleAddressBook mult = new MultipleAddressBook();
+		MultipleAddressBook1 mult = new MultipleAddressBook1();
 		System.out.println("Welcome to Address Book Program in AddressBook Main Class");
 		try {
 			while (true) {
@@ -243,7 +243,7 @@ public class AddressBook {
 					}
 					break;
 				case 2:
-					if (AddressBook.list.isEmpty()) {
+					if (AddressBook1.list.isEmpty()) {
 						System.out.println("Address Book is empty..!!");
 						break;
 					} else {
@@ -251,7 +251,7 @@ public class AddressBook {
 						break;
 					}
 				case 3:
-					if (AddressBook.list.isEmpty()) {
+					if (AddressBook1.list.isEmpty()) {
 						System.out.println("Address Book is empty");
 						break;
 					} else {
@@ -259,7 +259,7 @@ public class AddressBook {
 					}
 					break;
 				case 4:
-					if (AddressBook.list.isEmpty()) {
+					if (AddressBook1.list.isEmpty()) {
 						System.out.println("Address Book is empty");
 						break;
 					} else {

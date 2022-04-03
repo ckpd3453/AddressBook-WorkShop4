@@ -2,10 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class MultipleAddressBook {
+public class MultipleAddressBook1 {
 
-	static Person person;
-	static Map<String, AddressBook> multiList = new HashMap<>();
+	static Person1 person;
+	static Map<String, AddressBook1> multiList = new HashMap<>();
 	static Scanner sc = new Scanner(System.in);
 	
 	/*
@@ -20,7 +20,7 @@ public class MultipleAddressBook {
 			System.out.println("Book Already Exist");
 		}
 		else {
-			AddressBook service = new AddressBook();
+			AddressBook1 service = new AddressBook1();
 			multiList.put(bookName, service);
 		}
 		
@@ -32,7 +32,7 @@ public class MultipleAddressBook {
 	public void addingContacts() throws Exception {
 		System.out.println("Enter name of Address Book: ");
 		String finfBook = sc.next();
-		AddressBook scr = multiList.get(finfBook);
+		AddressBook1 scr = multiList.get(finfBook);
 		if(scr == null) {
 			System.out.println("Book Not Exist");
 		}else {
